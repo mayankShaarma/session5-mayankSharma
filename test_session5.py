@@ -117,11 +117,11 @@ def test_polygon_area_extra_kwargs():
 	with pytest.raises(TypeError):
 		session5.polygon_area(15,sides=4,base=5)
 
-#19 
+#19.
 def test_polygon_area_int_result():
 	assert int(session5.polygon_area(15,sides=4)) == 225, 'Polygon area calculation not happeing as expected.!'
 
-#20
+#20 
 def test_polygon_area_float_result():
 	assert round((session5.polygon_area(15,sides=4)),2) ==225.00, 'Polygon area calculation not happeing as expected.!'
 
